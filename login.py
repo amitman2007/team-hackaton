@@ -33,17 +33,17 @@ def add_or_login():
     if add_log == 'login':
         username = input("enter username:")
         password = input("enter password:")
-        if check_if_user_exist(username, password) == True:
+        if check_if_user_exist(username, password):
             print(f"login successful welcome back {username}")
             return username
         else: return False
     else:
         username = input("enter username:")
         password = input("enter password:")
-        if add_new_user(username,password) == True:
+        if add_new_user(username,password):
             return username
         else:return False
 
 
 
-add_or_login()
+# add_or_login()
