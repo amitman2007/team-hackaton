@@ -1,4 +1,5 @@
-user_database = {"omri": "4546"}
+from const import user_database
+
 
 
 def check_if_user_exist(username, password):
