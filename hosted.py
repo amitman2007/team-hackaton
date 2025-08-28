@@ -15,8 +15,12 @@ def event_sort():
 event_sort()
 
 
-date_of_event=input("enter the date:")
-hosted_list.append(date_of_event)
+
+def date_of_party():
+    date_of_event=input("enter the date:")
+    hosted_list.append(date_of_event)
+
+date_of_party()
 
 district = [
         "jerusalem district", "northern district ", "haifa district",
@@ -33,6 +37,7 @@ def district_sort ():
             hosted_list.append(district[i])
             print(hosted_list)
 district_sort()
+
 
 
 
