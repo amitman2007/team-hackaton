@@ -7,7 +7,7 @@ def create_info(username):
     work=input("what do you do for living?")
     hobbies=input("what are your hobbies:")
     general_info=input("fun fact about yourself :)")
-    info=age+' '+living+work+' '+hobbies+' '+general_info
+    info=age+' '+living+' '+work+' '+hobbies+' '+general_info
     text[username]=info
     return text
 

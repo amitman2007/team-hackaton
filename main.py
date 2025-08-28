@@ -1,4 +1,17 @@
+from tkinter import Label
+
+import date
 import description
+import tkinter\
+#
+#
+#
+# root = tkinter.Tk()
+# w = Label(root, text='GeeksForGeeks.org!')
+# w.pack()
+# root.mainloop()
+#
+#
 
 
 
@@ -7,11 +20,7 @@ import description
 
 
 
-
-
-
-
-
+# m.mainloop()
 
 
 
@@ -19,14 +28,17 @@ import description
 
 import login
 from const import user_database
-username=False
-while username==False:
-    username=login.add_or_login()
 
-    if username != True or username!= False:
+
+def main():
+    username = False
+
+    username = login.add_or_login()
+    if username != bool:
         description.create_info(username)
-        print(description.text)
 
 
+    guest_or_host=date.main_menu()
+    print(guest_or_host)
 
-
+main()
