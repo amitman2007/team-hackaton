@@ -9,7 +9,6 @@ district_choice = ["jerusalem district",  "northern district ",  "haifa district
                    "central district", "south district", "west district"]
 user_to_add=[]
 def rand_people():
-   people_list=[]
    people_dict={}
    for i in range(100):
        username = (f"person{i + 1}")
