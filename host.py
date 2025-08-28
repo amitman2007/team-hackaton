@@ -10,7 +10,6 @@ def the_host():
 
 
     chosen_event=events_list[input("please enter the number of the event(1-4):")]
-    date_of_event=input("enter the date:")
     district = {
             '1':"jerusalem district", '2':"northern district ", '3':"haifa district",
                 '4':"central district", '5':"south district", '6':"west district"
@@ -24,7 +23,6 @@ def the_host():
 
     host_list["name_of_event"]=name_of_event
     host_list["chosen event"]=chosen_event
-    host_list["date of event"]=date_of_event
     host_list["chosen district"]=chosen_district
     host_list["hour of event"]=hour_of_event
     all_host_list.append(host_list)

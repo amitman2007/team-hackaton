@@ -16,10 +16,6 @@ event_sort()
 
 
 
-def date_of_party():
-    date_of_event=input("enter the date:")
-    hosted_list.append(date_of_event)
-
 
 district = {
         '1':"jerusalem district", '2':"northern district", '3':"haifa district",
