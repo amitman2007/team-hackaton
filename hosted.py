@@ -1,18 +1,18 @@
 hosted_list=[]
 
 
-events_list={'1':"holiday eve", '2':"lodging", '3':"visit elderly people",'4':"happy events"}
-
+events_list={'1':"holiday", '2':"kiddush", '3':"meetup","other events":4}
+print("choose activity: ", events_list)
 
 
 def event_sort():
-    print("what : ", events_list)
 
     choosen_event=input("please enter the number of your event(1-4):")
     for i in range(len(events_list)):
-        if choosen_event == events_list[i]:
+        if choosen_event == events_list[choosen_event]:
             hosted_list.append(events_list[i])
-            # print(hosted_list)
+
+event_sort()
 
 
 
