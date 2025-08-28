@@ -26,19 +26,19 @@ def add_new_user(username,password):
 
 
 def add_or_login():
-    is_user_valid = False
     add_log = input("do you want to login or add new account:")
     while add_log != 'add' and add_log != 'login':
         print("please only type add or login")
         add_log = input("do you want to login or add new account:")
     if add_log == 'login':
-        while is_user_valid==False:
+        while True:
             username = input("enter username:")
             password = input("enter password:")
-            if check_if_user_exist(username, password) == True:
+
+            if check_if_user_exist(username, password):
                 print(f"login successful welcome back {username}")
-                is_user_valid=True
                 return True
+
 
 
     if add_log == 'add':

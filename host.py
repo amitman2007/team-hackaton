@@ -1,22 +1,24 @@
+from hosted import district, events_list
+
 all_host_list = []
 host_list={}
 
 def the_host():
     name_of_event = input("please enter your name of event:")
-    events_list={"holiday eve":1, "lodging":2, "visit elderly people":3,"happy events":4}
-    print("welcome to de website our events: ", events_list)
+    events_list={'1':"holiday", '2':"kiddush", '3':"meetup",'4':"other events"}
+    print("choose which event you would like to host?: ", events_list)
 
 
-    chosen_event=input("please enter the number of the event(1-4):")
+    chosen_event=events_list[input("please enter the number of the event(1-4):")]
     date_of_event=input("enter the date:")
     district = {
-            "jerusalem district":1, "northern district ":2, "haifa district":3,
-                "central district":4, "south district":5, "west district":6
+            '1':"jerusalem district", '2':"northern district ", '3':"haifa district",
+                '4':"central district", '5':"south district", '6':"west district"
 
     }
     print(" chose your district from the list: ", district)
 
-    chosen_district = input("please enter the num of the district(1-6):")
+    chosen_district = district[input("please enter the num of the district(1-6):")]
     hour_of_event=input("enter the hour:")
 
 
@@ -32,4 +34,3 @@ def the_host():
     print("CONGRATULATIONS!!!!!! YOUR EVENT HAS BEEN NOTED , THE INVENTIONS HAS BEEN SEND ")
     print(all_host_list)
 
-the_host()
