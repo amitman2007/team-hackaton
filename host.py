@@ -31,6 +31,6 @@ def the_host():
 
 
 
-    print("CONGRATULATIONS!!!!!! YOUR EVENT HAS BEEN NOTED , THE INVENTIONS HAS BEEN SEND ")
+    print("CONGRATULATIONS!!!!!! YOUR EVENT HAS BEEN NOTED , THE INVENTIONS HAS BEEN SENT ")
     print(all_host_list)
 
