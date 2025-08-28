@@ -1,8 +1,8 @@
 hosted_list=[]
 
 
-events_list={"holiday eve":1, "lodging":2, "visit elderly people":3,"happy events":4}
-print("welcome to de website our events: ", events_list)
+events_list={'1':"holiday eve", '2':"lodging", '3':"visit elderly people","happy events":4}
+print("what choo: ", events_list)
 
 
 def event_sort():
@@ -23,9 +23,8 @@ def date_of_party():
 date_of_party()
 
 district = {
-        "jerusalem district":1, "northern district ":2, "haifa district":3,
-            "central district":4, "south district":5, "west district":6
-
+        '1':"jerusalem district", '2':"northern district", '3':"haifa district",
+            '4':"central district", '5':"south district", '6':"west district"
 }
 print(" chose your district from the list: ", district)
 
